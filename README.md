@@ -47,7 +47,63 @@ claude-skills-bundle/
     └── organic-forward/          ← 2 skills + 5 commands: frontend-design, skill-builder, etc.
 ```
 
-## Quick Install
+## Getting Started (VS Code — from scratch)
+
+If you're starting from zero on a new machine with VS Code:
+
+**1. Install Node.js**
+
+| Platform | Command |
+|----------|---------|
+| macOS | `brew install node` |
+| Ubuntu | `sudo apt install -y nodejs npm` |
+| Windows | `winget install OpenJS.NodeJS.LTS` |
+
+**2. Install Claude Code CLI**
+
+```bash
+npm install -g @anthropic-ai/claude-code
+claude --version    # verify it works
+claude              # first run — opens browser for Anthropic login
+```
+
+**3. Install the VS Code extension**
+
+1. Open VS Code
+2. `Ctrl+Shift+X` (Extensions panel)
+3. Search **"Claude Code"**
+4. Install the official Anthropic extension
+5. Restart VS Code
+
+**4. Clone and install the skills bundle**
+
+Open a terminal in VS Code (`Ctrl+`` `) and run:
+
+```bash
+# macOS / Linux
+git clone https://github.com/mcmespinaa/claude-skills-bundle.git ~/claude-skills-bundle
+cd ~/claude-skills-bundle && chmod +x install.sh && ./install.sh --global
+```
+
+```powershell
+# Windows (PowerShell)
+git clone https://github.com/mcmespinaa/claude-skills-bundle.git "$env:USERPROFILE\claude-skills-bundle"
+cd "$env:USERPROFILE\claude-skills-bundle"; .\install.ps1 -Global
+```
+
+**5. Run the guided setup**
+
+Open the Claude Code panel in VS Code and type:
+
+```
+/setup
+```
+
+Claude will detect your OS and walk you through the full workspace setup — Obsidian vaults, settings, Google APIs, NotebookLM, GHL, and everything else. Just answer the questions.
+
+---
+
+## Quick Install (existing Claude Code users)
 
 ### macOS / Linux
 
