@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 100%; height: 100%; overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    background-color: #e8e4de;
+    font-family: $font_body;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .email-frame {
+    width: 520px;
+    background: $bg_color;
+    border-radius: 12px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.04);
+    overflow: hidden;
+    position: relative;
+  }
+  /* Accent bar at top of email */
+  .email-accent {
+    height: 4px;
+    background: linear-gradient(90deg, $accent_color, ${accent_color}66);
+  }
+  .email-content {
+    padding: 40px 36px 36px;
+  }
+  .email-eyebrow {
+    font-family: $font_body;
+    font-weight: 500;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $accent_color;
+    margin-bottom: 12px;
+  }
+  .email-subject {
+    font-family: $font_headline;
+    font-weight: 600;
+    font-size: 28px;
+    color: $text_color;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .email-preview-text {
+    font-family: $font_body;
+    font-weight: 400;
+    font-size: 15px;
+    color: $text_secondary;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+  .email-cta {
+    display: inline-block;
+    font-family: $font_body;
+    font-weight: 500;
+    font-size: 14px;
+    color: $bg_color;
+    background: $accent_color;
+    padding: 10px 28px;
+    border-radius: 20px;
+  }
+  .email-footer {
+    padding: 20px 36px;
+    border-top: 1px solid ${bg_secondary};
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .email-from {
+    font-family: $font_body;
+    font-size: 12px;
+    color: $text_muted;
+  }
+  .email-handle {
+    font-family: $font_body;
+    font-size: 12px;
+    color: $text_muted;
+  }
+  /* "Newsletter" label floating above */
+  .label {
+    position: absolute;
+    top: 20px; left: 50%;
+    transform: translateX(-50%);
+    font-family: $font_body;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $text_muted;
+  }
+</style>
+</head>
+<body>
+  <span class="label">Newsletter</span>
+  <div class="email-frame">
+    <div class="email-accent"></div>
+    <div class="email-content">
+      <div class="email-eyebrow">$eyebrow</div>
+      <h1 class="email-subject">$headline</h1>
+      <p class="email-preview-text">$body</p>
+      <span class="email-cta">$cta_text</span>
+    </div>
+    <div class="email-footer">
+      <span class="email-from">$sender_name</span>
+      <span class="email-handle">$brand_handle</span>
+    </div>
+  </div>
+</body>
+</html>

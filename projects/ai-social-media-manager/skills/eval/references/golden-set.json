@@ -1,0 +1,84 @@
+[
+  {
+    "id": "gs-01",
+    "skill": "post",
+    "platform": "linkedin",
+    "description": "Personal story + AI thought leadership (voice match test)",
+    "caption": "I spent this year building AI workflows and shipping things. Hands-on. Every day.\n\nI get more value from doing the work than from sitting through courses about doing the work. The pace of change is too fast for traditional structures.\n\nI stay in school because of the people. The relationships. The projects we build together. That part keeps me coming back.\n\nThe content? Too slow for me 😂\n\nYour edge is not \"knowing AI.\" Your edge is knowing when it matters and when it doesn't.",
+    "is_carousel": false,
+    "min_deterministic": 100,
+    "min_composite": 80
+  },
+  {
+    "id": "gs-02",
+    "skill": "post",
+    "platform": "twitter",
+    "description": "Punchy life lesson (X-native format)",
+    "caption": "Develop discernment. Know what matters to you. Give 10-20% to everything else. The pressure shows up when you try to give 101% on everything. You will burn out.",
+    "is_carousel": false,
+    "min_deterministic": 100,
+    "min_composite": 80
+  },
+  {
+    "id": "gs-03",
+    "skill": "post",
+    "platform": "instagram",
+    "description": "Relatable personal caption with emojis",
+    "caption": "When your work aligns with your skills, struggle feels like play.\n\nStop giving 101% to everything. It's unsustainable. Give your all to what matters. Perform 10-20% on the rest. The pressure disappears \u2764\ufe0f\u2728",
+    "is_carousel": false,
+    "min_deterministic": 100,
+    "min_composite": 80
+  },
+  {
+    "id": "gs-04",
+    "skill": "post",
+    "platform": "linkedin",
+    "description": "Actionable advice (short format)",
+    "caption": "Stop giving 101% on everything. Pick what matters to you. Go all in on those. Give the rest 10-20%.\n\nThis is not laziness. This is how you sustain yourself.\n\nI learned this the hard way. You don't have to. \ud83d\ude4f",
+    "is_carousel": false,
+    "min_deterministic": 100,
+    "min_composite": 80
+  },
+  {
+    "id": "gs-05",
+    "skill": "post",
+    "platform": "twitter",
+    "description": "Short insight (minimal format)",
+    "caption": "When your work aligns with your skills, struggle feels like play. When it doesn't, everything feels heavy. Pay attention to that.",
+    "is_carousel": false,
+    "min_deterministic": 100,
+    "min_composite": 80
+  },
+  {
+    "id": "gs-06",
+    "skill": "post",
+    "platform": "facebook",
+    "description": "AI-generated caption with known issues (regression baseline)",
+    "caption": "In a world where AI is ever-evolving, it's pivotal to delve deep into the landscape of digital transformation.\n\nLet me shed light on something remarkable \u2014 the synergy between human creativity and machine intelligence is truly groundbreaking.\n\nUnlock your potential. Harness the power of AI. Discover what's possible.\n\n#AI #Innovation #FutureOfWork #DigitalTransformation #Leadership",
+    "is_carousel": false,
+    "min_deterministic": 0,
+    "min_composite": 0,
+    "expect_fail": true,
+    "fail_checks": ["D1", "D2", "D7"]
+  },
+  {
+    "id": "gs-07",
+    "skill": "post",
+    "platform": "instagram",
+    "description": "Carousel post with hashtags (should pass D7)",
+    "caption": "I get more value from building AI tools than from writing academic papers about theory. The uni stuff sounds blah blah to me now \ud83d\ude05\n\nBut the people? The projects we build together? That keeps me showing up.\n\nI go where the energy is \ud83d\udcaa\n\n#AItools #BuildInPublic #TechLife",
+    "is_carousel": true,
+    "min_deterministic": 100,
+    "min_composite": 80
+  },
+  {
+    "id": "gs-08",
+    "skill": "post",
+    "platform": "threads",
+    "description": "Threads-native short post",
+    "caption": "Do your best. Don't stress so much. You are more than enough.",
+    "is_carousel": false,
+    "min_deterministic": 100,
+    "min_composite": 80
+  }
+]

@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Delete an email template from GHL.
+# DELETE /emails/builder/:locationId/:templateId
+
+: "${GHL_API_KEY:?Missing GHL_API_KEY}"
+: "${GHL_LOCATION_ID:?Missing GHL_LOCATION_ID}"
+: "${GHL_VERSION:?Missing GHL_VERSION}"
+
+TEMPLATE_ID=""
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --template-id) TEMPLATE_ID="$2"; shift 2 ;;
+    *) echo "Unknown arg: $1" >&2; exit 1 ;;
+  esac
+done
+
+if [[ -z "$TEMPLATE_ID" ]]; then
+  echo "Error: --template-id is required" >&2
+  exit 1
+fi
+
+echo "Deleting template: $TEMPLATE_ID" >&2
+
+RESPONSE=$(curl -s -w "\nHTTP_STATUS:%{http_code}" \
+  -X DELETE "https://services.leadconnectorhq.com/emails/builder/$GHL_LOCATION_ID/$TEMPLATE_ID" \
+  -H "Authorization: Bearer $GHL_API_KEY" \
+  -H "Version: $GHL_VERSION")
+
+HTTP_STATUS=$(echo "$RESPONSE" | tail -1 | sed 's/HTTP_STATUS://')
+BODY=$(echo "$RESPONSE" | sed '$d')
+
+if [[ "$HTTP_STATUS" != "200" && "$HTTP_STATUS" != "204" ]]; then
+  echo "Error deleting template. HTTP $HTTP_STATUS" >&2
+  echo "$BODY" >&2
+  exit 1
+fi
+
+echo "Template deleted: $TEMPLATE_ID"

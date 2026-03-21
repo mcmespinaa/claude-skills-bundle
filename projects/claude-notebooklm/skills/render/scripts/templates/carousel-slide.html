@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 100%; height: 100%; overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    background-color: $bg_color;
+    color: $text_color;
+    font-family: $font_body;
+    position: relative;
+  }
+  /* Grain overlay */
+  body::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none; z-index: 1000;
+  }
+  /* Dark mode border */
+  body::before {
+    content: '';
+    position: absolute; inset: 0;
+    border: 1px solid $bg_secondary;
+    pointer-events: none; z-index: 999;
+  }
+
+  /* ===== HOOK SLIDE ===== */
+  .slide-hook {
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 80px;
+    text-align: center;
+    position: relative; z-index: 1;
+  }
+  .slide-hook .headline {
+    font-family: $font_headline;
+    font-weight: 600;
+    font-size: 52px;
+    color: $text_color;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    max-width: 820px;
+    margin-bottom: 32px;
+  }
+  .slide-hook .body-text {
+    font-family: $font_body;
+    font-weight: 400;
+    font-size: 20px;
+    color: $text_secondary;
+    line-height: 1.5;
+    max-width: 680px;
+  }
+  /* Avatar ring for hook */
+  .avatar-ring {
+    width: 100px; height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(from 180deg, $accent_color, ${accent_color}44, $accent_color);
+    padding: 4px;
+    margin-bottom: 40px;
+  }
+  .avatar-ring-inner {
+    width: 100%; height: 100%;
+    border-radius: 50%;
+    background-color: $bg_color;
+    display: flex; align-items: center; justify-content: center;
+    font-family: $font_headline;
+    font-size: 28px; font-weight: 600;
+    color: $accent_color;
+  }
+
+  /* ===== VALUE SLIDE ===== */
+  .slide-value {
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    padding: 80px;
+    position: relative; z-index: 1;
+  }
+  .step-indicator {
+    font-family: $font_body;
+    font-weight: 500;
+    font-size: 14px;
+    color: $text_muted;
+    margin-bottom: 48px;
+  }
+  .slide-value .headline {
+    font-family: $font_headline;
+    font-weight: 600;
+    font-size: 36px;
+    color: $text_color;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    max-width: 820px;
+  }
+  .slide-value .body-text {
+    font-family: $font_body;
+    font-weight: 400;
+    font-size: 18px;
+    color: $text_secondary;
+    line-height: 1.6;
+    max-width: 760px;
+  }
+  /* Step number accent */
+  .step-number {
+    font-family: $font_headline;
+    font-weight: 600;
+    font-size: 72px;
+    color: ${accent_color}20;
+    position: absolute;
+    top: 60px; right: 80px;
+    line-height: 1;
+  }
+
+  /* ===== CTA SLIDE ===== */
+  .slide-cta {
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 80px;
+    text-align: center;
+    position: relative; z-index: 1;
+    background: linear-gradient(180deg, $bg_color 0%, ${accent_color}08 100%);
+  }
+  .slide-cta .headline {
+    font-family: $font_headline;
+    font-weight: 600;
+    font-size: 42px;
+    color: $text_color;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    max-width: 720px;
+    margin-bottom: 24px;
+  }
+  .slide-cta .body-text {
+    font-family: $font_body;
+    font-weight: 400;
+    font-size: 18px;
+    color: $text_secondary;
+    line-height: 1.5;
+    max-width: 600px;
+    margin-bottom: 40px;
+  }
+  .cta-button {
+    font-family: $font_body;
+    font-weight: 500;
+    font-size: 16px;
+    color: $bg_color;
+    background-color: $accent_color;
+    padding: 14px 40px;
+    border-radius: 28px;
+    display: inline-block;
+  }
+
+  /* Shared blob */
+  .blob {
+    position: absolute;
+    width: 280px; height: 280px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40% 40%, ${accent_color}18, transparent 70%);
+    filter: blur(50px);
+    z-index: 0;
+  }
+  .blob-top-right { top: -40px; right: -40px; }
+  .blob-bottom-left { bottom: -40px; left: -40px; }
+
+  /* Handle (all variants) */
+  .handle {
+    position: absolute;
+    bottom: 40px;
+    left: 0; right: 0;
+    text-align: center;
+    font-family: $font_body;
+    font-weight: 400;
+    font-size: 13px;
+    color: $text_muted;
+    z-index: 2;
+  }
+</style>
+</head>
+<body>
+
+  <!-- HOOK variant (slide_type=hook) -->
+  <div class="slide-hook" style="display: $display_hook">
+    <div class="blob blob-top-right"></div>
+    <div class="avatar-ring">
+      <div class="avatar-ring-inner">$avatar_initial</div>
+    </div>
+    <h1 class="headline">$headline</h1>
+    <p class="body-text">$body</p>
+  </div>
+
+  <!-- VALUE variant (slide_type=value) -->
+  <div class="slide-value" style="display: $display_value">
+    <div class="blob blob-bottom-left"></div>
+    <div class="step-number">$step_number</div>
+    <div class="step-indicator">$step_number / $total</div>
+    <h1 class="headline">$headline</h1>
+    <p class="body-text">$body</p>
+  </div>
+
+  <!-- CTA variant (slide_type=cta) -->
+  <div class="slide-cta" style="display: $display_cta">
+    <div class="avatar-ring">
+      <div class="avatar-ring-inner">$avatar_initial</div>
+    </div>
+    <h1 class="headline">$headline</h1>
+    <p class="body-text">$body</p>
+    <div class="cta-button">$cta_text</div>
+  </div>
+
+  <div class="handle">$brand_handle</div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 100%; height: 100%; overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    background-color: $bg_color;
+    color: $text_color;
+    font-family: $font_body;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  /* Grain overlay */
+  body::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none; z-index: 1000;
+  }
+  /* Accent gradient blob */
+  .blob {
+    position: absolute;
+    width: 320px; height: 320px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40% 40%, ${accent_color}22, ${accent_color}08, transparent 70%);
+    top: 12%; right: 8%;
+    filter: blur(40px);
+    z-index: 0;
+  }
+  .blob-secondary {
+    position: absolute;
+    width: 240px; height: 240px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 60% 60%, ${accent_color}18, transparent 70%);
+    bottom: 15%; left: 10%;
+    filter: blur(50px);
+    z-index: 0;
+  }
+  .card {
+    position: relative;
+    z-index: 1;
+    width: 100%; height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    text-align: center;
+  }
+  .eyebrow {
+    font-family: $font_body;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $accent_color;
+    margin-bottom: 28px;
+  }
+  .headline {
+    font-family: $font_headline;
+    font-weight: 600;
+    font-size: 48px;
+    color: $text_color;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin-bottom: 24px;
+    max-width: 820px;
+  }
+  .body-text {
+    font-family: $font_body;
+    font-weight: 400;
+    font-size: 20px;
+    color: $text_secondary;
+    line-height: 1.5;
+    max-width: 680px;
+    margin-bottom: 48px;
+  }
+  .handle {
+    font-family: $font_body;
+    font-weight: 400;
+    font-size: 14px;
+    color: $text_muted;
+  }
+</style>
+</head>
+<body>
+  <div class="blob"></div>
+  <div class="blob-secondary"></div>
+  <div class="card">
+    <div class="eyebrow">$eyebrow</div>
+    <h1 class="headline">$headline</h1>
+    <p class="body-text">$body</p>
+    <span class="handle">$brand_handle</span>
+  </div>
+</body>
+</html>

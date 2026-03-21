@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 100%; height: 100%; overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    background-color: $bg_color;
+    color: $text_color;
+    font-family: $font_body;
+    position: relative;
+  }
+  /* Grain overlay */
+  body::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none; z-index: 1000;
+  }
+  /* Top accent bar */
+  .accent-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, $accent_color, ${accent_color}66);
+  }
+  /* Soft gradient blob */
+  .blob {
+    position: absolute;
+    width: 400px; height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 40%, ${accent_color}15, transparent 70%);
+    top: -80px; right: -60px;
+    filter: blur(60px);
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+    width: 100%; height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 80px;
+  }
+  .eyebrow {
+    font-family: $font_body;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $accent_color;
+    margin-bottom: 20px;
+  }
+  .headline {
+    font-family: $font_headline;
+    font-weight: 600;
+    font-size: 42px;
+    color: $text_color;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    max-width: 860px;
+  }
+  .subtitle {
+    font-family: $font_body;
+    font-weight: 400;
+    font-size: 18px;
+    color: $text_secondary;
+    line-height: 1.5;
+    max-width: 700px;
+    margin-bottom: 0;
+  }
+  .footer {
+    position: absolute;
+    bottom: 40px; left: 80px; right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .category {
+    font-family: $font_body;
+    font-weight: 500;
+    font-size: 12px;
+    color: $accent_color;
+    background: ${accent_color}12;
+    padding: 6px 16px;
+    border-radius: 20px;
+  }
+  .handle {
+    font-family: $font_body;
+    font-weight: 400;
+    font-size: 14px;
+    color: $text_muted;
+  }
+</style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="blob"></div>
+  <div class="container">
+    <div class="eyebrow">$eyebrow</div>
+    <h1 class="headline">$headline</h1>
+    <p class="subtitle">$subtitle</p>
+  </div>
+  <div class="footer">
+    <span class="category">$category</span>
+    <span class="handle">$brand_handle</span>
+  </div>
+</body>
+</html>
