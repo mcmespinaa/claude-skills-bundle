@@ -15,7 +15,7 @@ import sys
 CREDENTIALS_PATH = os.path.expanduser("~/.notebooklm/drive_credentials.json")
 TOKEN_PATH = os.path.expanduser("~/.notebooklm/drive_token.json")
 SCOPES = ["https://www.googleapis.com/auth/drive.file"]
-DEFAULT_FOLDER_ID = "1tF0v7oV0JpC_Ei7TBjk-h730U3sSp0BP"
+DEFAULT_FOLDER_ID = os.environ.get("DRIVE_DEFAULT_FOLDER_ID", "")
 
 MIME_MAP = {
     ".png": "image/png",

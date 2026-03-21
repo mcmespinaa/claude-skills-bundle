@@ -6,7 +6,7 @@ Create a versioned snapshot of the current project state: commit to git and back
 ## Steps
 
 1. **Gather current state**
-   - Run `git status` in /Users/MC/organic-forward/
+   - Run `git status` in $HOME/organic-forward/
    - Run `git diff --stat` to summarize changes
    - Run `git log --oneline -5` to see recent commits
    - Note the current branch

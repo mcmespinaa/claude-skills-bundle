@@ -18,7 +18,7 @@ Save Claude Code outputs — session summaries, skills, code snippets, resources
 ## Constants
 
 ```
-VAULT_ROOT: /Users/MC/Obsidian/Claude-Brain
+VAULT_ROOT: $HOME/Obsidian/Claude-Brain
 CONVERSATIONS_DIR: ${VAULT_ROOT}/02-AI-Conversations/claude-code
 SKILLS_DIR: ${VAULT_ROOT}/03-Skills-and-Tools/skills
 SNIPPETS_DIR: ${VAULT_ROOT}/04-Resources/snippets

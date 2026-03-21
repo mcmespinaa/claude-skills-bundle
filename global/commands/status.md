@@ -3,7 +3,7 @@ Report the current state of the Organic Forward project. Read actual sources —
 ## Steps
 
 1. **Git state**
-   - Run `git status` in /Users/MC/organic-forward/
+   - Run `git status` in $HOME/organic-forward/
    - Run `git log --oneline -15` for recent commits
    - Note current branch and any uncommitted/untracked changes
 

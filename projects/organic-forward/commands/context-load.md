@@ -3,7 +3,7 @@ You are starting a fresh session. Perform a full context load to orient yourself
 ## Steps
 
 1. **Read project instructions**
-   - Read `/Users/MC/organic-forward/CLAUDE.md`
+   - Read `$HOME/organic-forward/CLAUDE.md`
    - Read the sub-project CLAUDE.md for whichever directory the user wants to work in (if specified)
 
 2. **Read vault index**
@@ -18,7 +18,7 @@ You are starting a fresh session. Perform a full context load to orient yourself
    - Internalize the do's/don'ts for this session
 
 5. **Check current system state**
-   - Run `git status` and `git log --oneline -10` in /Users/MC/organic-forward/
+   - Run `git status` and `git log --oneline -10` in $HOME/organic-forward/
    - Note current branch, uncommitted changes, recent work
 
 6. **Output a session briefing** in this format:

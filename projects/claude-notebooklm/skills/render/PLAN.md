@@ -272,7 +272,7 @@ $brand_handle      — @agentces
 
 **How `render.py` reads brand data:**
 
-1. Resolve `$BRAND_DIR` via `init.py` (e.g., `/Users/UPCHANNEL/claude-notebooklm/brands/ces/`)
+1. Resolve `$BRAND_DIR` via `init.py` (e.g., `$HOME/claude-notebooklm/brands/ces/`)
 2. Parse `brand-colors.md`:
    - Extract hex codes by scanning for `#[0-9a-fA-F]{6}` patterns next to known labels
    - Map: `Ivory` -> `$bg_color`, `Warm Charcoal` -> `$text_color`, pillar names -> `$accent_color`

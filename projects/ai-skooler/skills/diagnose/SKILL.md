@@ -9,7 +9,7 @@ Maps a community creator to their position in the Kourse 7-OS progression, ident
 
 ## Prerequisites
 
-- Kourse vault must exist at `/Users/MC/Obsidian/ai-skooler/Kourse/`
+- Kourse vault must exist at `$HOME/Obsidian/ai-skooler/Kourse/`
 - Read [references/os-phases.md](references/os-phases.md) for the full phase map before starting
 
 ## Input
@@ -76,7 +76,7 @@ Show the math explicitly. If numbers are assumed, say so.
 
 ### Step 5: Read relevant vault content
 
-Based on the diagnosed phase, read 2-3 key lesson files from the Kourse vault at `/Users/MC/Obsidian/ai-skooler/Kourse/` that directly address their binding constraint. Don't summarize the entire OS — pull the specific insight that applies to their situation.
+Based on the diagnosed phase, read 2-3 key lesson files from the Kourse vault at `$HOME/Obsidian/ai-skooler/Kourse/` that directly address their binding constraint. Don't summarize the entire OS — pull the specific insight that applies to their situation.
 
 ### Step 6: Write the diagnostic
 

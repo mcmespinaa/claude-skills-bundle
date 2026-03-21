@@ -3,17 +3,17 @@ You are starting a fresh session. Perform a full context load to orient yourself
 ## Steps
 
 1. **Read project instructions**
-   - Read `/Users/MC/Projects/Ces ai-portfolio/CLAUDE.md`
+   - Read `$HOME/Projects/Ces-ai-portfolio/CLAUDE.md`
 
 2. **Read vault index**
-   - Read `/Users/MC/Projects/Ces ai-portfolio/Ces Portfolio/_index.md` for full vault overview
+   - Read `$HOME/Projects/Ces-ai-portfolio/Ces Portfolio/_index.md` for full vault overview
 
 3. **Read decision registry**
-   - Read `/Users/MC/Projects/Ces ai-portfolio/Ces Portfolio/decisions/decision-registry.md`
+   - Read `$HOME/Projects/Ces-ai-portfolio/Ces Portfolio/decisions/decision-registry.md`
    - Note the last decision number and any proposed/deferred decisions
 
 4. **Check current system state**
-   - Run `git status` and `git log --oneline -10` in `/Users/MC/Projects/Ces ai-portfolio/`
+   - Run `git status` and `git log --oneline -10` in `$HOME/Projects/Ces-ai-portfolio/`
    - Note current branch, uncommitted changes, recent work
 
 5. **Output a session briefing** in this format:

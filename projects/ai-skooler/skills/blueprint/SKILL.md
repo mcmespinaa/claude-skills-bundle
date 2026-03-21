@@ -9,8 +9,8 @@ Generates a no-fluff, step-by-step execution blueprint for a specific Kourse OS 
 
 ## Prerequisites
 
-- Kourse vault must exist at `/Users/MC/Obsidian/ai-skooler/Kourse/`
-- Read the OS phases reference at `/Users/MC/ai-skooler/.claude/skills/diagnose/references/os-phases.md` for phase context
+- Kourse vault must exist at `$HOME/Obsidian/ai-skooler/Kourse/`
+- Read the OS phases reference at `$HOME/ai-skooler/.claude/skills/diagnose/references/os-phases.md` for phase context
 - Read the relevant lesson files from the vault before writing the blueprint
 
 ## Input
@@ -42,13 +42,13 @@ If the user came from `/diagnose`, use the diagnosed phase. If they specified a 
 
 ### Step 2: Read the vault lessons
 
-Read the actual lesson files from `/Users/MC/Obsidian/ai-skooler/Kourse/` for the relevant OS module. Every blueprint step must trace back to a real lesson or resource — no invented advice.
+Read the actual lesson files from `$HOME/Obsidian/ai-skooler/Kourse/` for the relevant OS module. Every blueprint step must trace back to a real lesson or resource — no invented advice.
 
 Read at minimum:
 
 - The "Welcome to [X] OS" lesson for that phase
 - 2-3 key tactical lessons within that module
-- Relevant resource files from `/Users/MC/Obsidian/ai-skooler/Kourse/Resources/` (if they exist)
+- Relevant resource files from `$HOME/Obsidian/ai-skooler/Kourse/Resources/` (if they exist)
 
 ### Step 3: Build the blueprint
 

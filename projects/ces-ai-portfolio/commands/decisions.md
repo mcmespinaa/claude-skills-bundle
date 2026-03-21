@@ -2,7 +2,7 @@ Surface relevant decisions from the decision registry. Optionally filter by stat
 
 ## Steps
 
-1. Read `/Users/MC/Projects/Ces ai-portfolio/Ces Portfolio/decisions/decision-registry.md`
+1. Read `$HOME/Projects/Ces-ai-portfolio/Ces Portfolio/decisions/decision-registry.md`
 
 2. Parse the user's request:
    - If they asked about a specific topic → filter decisions by keyword

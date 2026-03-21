@@ -9,8 +9,8 @@ Documents community scaling decisions with structured rationale, tradeoffs, and 
 
 ## Prerequisites
 
-- Decisions vault at `/Users/MC/Obsidian/OrganicForward/decisions/` must be accessible
-- Kourse vault at `/Users/MC/Obsidian/ai-skooler/Kourse/` for framework references
+- Decisions vault at `$HOME/Obsidian/OrganicForward/decisions/` must be accessible
+- Kourse vault at `$HOME/Obsidian/ai-skooler/Kourse/` for framework references
 
 ## Input
 
@@ -39,7 +39,7 @@ Read relevant Kourse lessons that address this decision area. The vault has real
 Check if similar decisions have been logged before:
 
 ```
-/Users/MC/Obsidian/OrganicForward/decisions/
+$HOME/Obsidian/OrganicForward/decisions/
 ```
 
 ### Step 3: Write the decision record
@@ -121,10 +121,10 @@ Example: "Revisit if close rate stays below 15% after 20 calls" or "Revisit if M
 
 ### Step 4: Save the decision
 
-Write the decision record to `/Users/MC/Obsidian/OrganicForward/decisions/` with the filename format:
+Write the decision record to `$HOME/Obsidian/OrganicForward/decisions/` with the filename format:
 `[YYYY-MM-DD] [Decision Title].md`
 
-If the decision is about the ai-skooler project specifically (not OrganicForward), save to `/Users/MC/Obsidian/ai-skooler/` in an appropriate location instead.
+If the decision is about the ai-skooler project specifically (not OrganicForward), save to `$HOME/Obsidian/ai-skooler/` in an appropriate location instead.
 
 ### Step 5: Cross-reference
 

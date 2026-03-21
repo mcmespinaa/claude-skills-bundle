@@ -1,4 +1,4 @@
-Review this entire conversation and extract information into the Obsidian vault at `/Users/MC/Projects/Ces ai-portfolio/Ces Portfolio/`.
+Review this entire conversation and extract information into the Obsidian vault at `$HOME/Projects/Ces-ai-portfolio/Ces Portfolio/`.
 
 ## Steps
 

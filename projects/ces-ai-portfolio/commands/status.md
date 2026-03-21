@@ -3,16 +3,16 @@ Report the current state of the Ces AI Portfolio project. Read actual sources â€
 ## Steps
 
 1. **Git state**
-   - Run `git status` in `/Users/MC/Projects/Ces ai-portfolio/`
+   - Run `git status` in `$HOME/Projects/Ces-ai-portfolio/`
    - Run `git log --oneline -15` for recent commits
    - Note current branch and any uncommitted/untracked changes
 
 2. **Build progress**
-   - Read `/Users/MC/Projects/Ces ai-portfolio/Ces Portfolio/_index.md` for phase status
+   - Read `$HOME/Projects/Ces-ai-portfolio/Ces Portfolio/_index.md` for phase status
    - Check for the latest build doc in `Ces Portfolio/build/`
 
 3. **Decision state**
-   - Read `/Users/MC/Projects/Ces ai-portfolio/Ces Portfolio/decisions/decision-registry.md`
+   - Read `$HOME/Projects/Ces-ai-portfolio/Ces Portfolio/decisions/decision-registry.md`
    - Count: accepted, proposed, deferred
    - List any proposed decisions that are blocking
 

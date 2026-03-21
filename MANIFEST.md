@@ -94,7 +94,7 @@ Generated: 2026-03-21
 |---------|-------------|
 | `/context-load` | You are starting a fresh session. Perform a full context load to orient yourself before any work begins. |
 | `/decisions` | Surface relevant decisions from the decision registry. Optionally filter by status or topic. |
-| `/session-log` | Review this entire conversation and extract information into the Obsidian vault at `/Users/MC/Projects/Ces ai-portfolio/ |
+| `/session-log` | Review this entire conversation and extract information into the Obsidian vault at `$HOME/Projects/Ces-ai-portfolio/ |
 | `/status` | Report the current state of the Ces AI Portfolio project. Read actual sources — do not answer from memory. |
 
 ## Project: claude-notebooklm (15 skills, 0 commands)

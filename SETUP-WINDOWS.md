@@ -1199,13 +1199,13 @@ cd path\to\claude-skills-bundle
 
 **Post-install — update paths:**
 
-The vault skill files reference macOS paths (`/Users/UPCHANNEL/...`). Update the `## Location` section in each skill to match your Windows paths:
+The vault skill files reference macOS paths (`$HOME/...`). Update the `## Location` section in each skill to match your Windows paths:
 
 ```powershell
 # Bulk find-replace (PowerShell)
 $skillsDir = "$env:USERPROFILE\Obsidian\Claude-Brain\03-Skills-and-Tools\skills"
 Get-ChildItem "$skillsDir\*.md" | ForEach-Object {
-    (Get-Content $_.FullName) -replace '/Users/UPCHANNEL/', "C:\Users\$env:USERNAME\" |
+    (Get-Content $_.FullName) -replace '$HOME/', "C:\Users\$env:USERNAME\" |
     Set-Content $_.FullName
 }
 ```
