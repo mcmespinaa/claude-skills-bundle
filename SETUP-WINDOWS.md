@@ -818,6 +818,7 @@ gcloud auth application-default login
 
 # Enable required APIs
 gcloud services enable youtube.googleapis.com
+gcloud services enable drive.googleapis.com
 gcloud services enable calendar-json.googleapis.com
 gcloud services enable gmail.googleapis.com
 ```
