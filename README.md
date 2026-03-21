@@ -1,6 +1,6 @@
 # Claude Code Skills Bundle
 
-Complete collection of Claude Code skills and commands extracted from the Ces AI workspace (Mac, March 2026).
+Complete collection of Claude Code skills and commands extracted from the Ces AI workspace (March 2026). Includes installers for **macOS/Linux** and **Windows**.
 
 ## Contents
 
@@ -18,7 +18,9 @@ Complete collection of Claude Code skills and commands extracted from the Ces AI
 claude-skills-bundle/
 ├── README.md                 ← You are here
 ├── MANIFEST.md               ← Full inventory of every skill
-├── install.sh                ← Cross-platform installer (macOS/Linux/WSL)
+├── SETUP-WINDOWS.md          ← Full workspace setup guide for Windows
+├── install.sh                ← Installer (macOS/Linux/WSL)
+├── install.ps1               ← Installer (Windows PowerShell)
 ├── global/
 │   ├── commands/             ← 4 global slash commands
 │   │   ├── context-load.md
@@ -44,49 +46,96 @@ claude-skills-bundle/
 
 ## Quick Install
 
-### Option A: Install everything (global + all projects)
+### macOS / Linux
+
 ```bash
+git clone https://github.com/mcmespinaa/claude-skills-bundle.git
+cd claude-skills-bundle
+
+# Install global skills + commands only
 chmod +x install.sh
-./install.sh --all
-```
-
-### Option B: Install global only
-```bash
 ./install.sh --global
-```
 
-### Option C: Install specific project(s)
-```bash
+# Install everything (prompts for each project path)
+./install.sh --all
+
+# Install specific project(s)
 ./install.sh --project ai-social-media-manager
 ./install.sh --project organic-forward --project ai-skooler
+
+# Preview without copying
+./install.sh --dry-run --all
 ```
 
-### Option D: Manual install
+### Windows (PowerShell)
+
+```powershell
+git clone https://github.com/mcmespinaa/claude-skills-bundle.git
+cd claude-skills-bundle
+
+# Install global skills + commands only
+.\install.ps1 -Global
+
+# Install everything (prompts for each project path)
+.\install.ps1 -All
+
+# Install specific project(s)
+.\install.ps1 -Project ai-social-media-manager
+.\install.ps1 -Project organic-forward -Project ai-skooler
+
+# Preview without copying
+.\install.ps1 -DryRun -All
+
+# Override default paths
+.\install.ps1 -Project ai-social-media-manager -TargetDir "C:\Projects\my-project"
+.\install.ps1 -Global -ClaudeHome "D:\custom\.claude"
+```
+
+### Manual Install
+
 ```bash
-# Global commands → ~/.claude/commands/
+# macOS/Linux
 cp -R global/commands/*.md ~/.claude/commands/
-
-# Global skills → ~/.claude/skills/
 cp -R global/skills/* ~/.claude/skills/
-
-# Project skills → <project-root>/.claude/skills/
 cp -R projects/ai-social-media-manager/skills/* /path/to/project/.claude/skills/
 ```
 
+```powershell
+# Windows
+Copy-Item global\commands\*.md "$env:USERPROFILE\.claude\commands\" -Force
+Copy-Item global\skills\* "$env:USERPROFILE\.claude\skills\" -Recurse -Force
+Copy-Item projects\ai-social-media-manager\skills\* "C:\path\to\project\.claude\skills\" -Recurse -Force
+```
+
+## Full Workspace Setup (Windows)
+
+For a complete workspace setup including Claude Code, Obsidian, Supabase, MCP servers, GHL, NotebookLM, YouTube search, and scheduled automation — see **[SETUP-WINDOWS.md](SETUP-WINDOWS.md)**.
+
+This is a 15-phase guide that covers:
+1. Claude Code CLI + VS Code extension
+2. Obsidian vault creation
+3. Three-layer architecture (CLAUDE.md → CONTEXT.md → Playbooks)
+4. Claude Code settings + safety hooks
+5. Shared Supabase database
+6. Real-time vault watcher + backup
+7. MCP servers (Obsidian, Stitch, Excalidraw, Playwright)
+8. Plugins (GitHub, Frontend Design, Context7, Playwright, GHL)
+9. Google Workspace CLI + YouTube search
+10. NotebookLM integration
+11. GHL social media manager
+12. Clief Notes best practices
+13. Task Scheduler automation
+14. Skills bundle installation + hooks + memory system
+15. Verification checklist
+
 ## How Claude Code Discovers Skills
 
-| Type | Location | Scope |
-|------|----------|-------|
-| **Global commands** | `~/.claude/commands/*.md` | Available in every project via `/command-name` |
-| **Global skills** | `~/.claude/skills/<name>/SKILL.md` | Auto-activated by description matching |
-| **Project commands** | `<project>/.claude/commands/*.md` | Available only in that project |
-| **Project skills** | `<project>/.claude/skills/<name>/SKILL.md` | Available only in that project |
-
-## Platform Notes
-
-- **macOS/Linux**: Scripts use `bash` and standard Unix tools. Works as-is.
-- **Windows (WSL)**: Run inside WSL. The installer detects WSL and adjusts `~/.claude` paths.
-- **Windows (native)**: Use `%USERPROFILE%\.claude\` instead of `~/.claude/`. Manual copy recommended.
+| Type | Location (macOS/Linux) | Location (Windows) | Scope |
+|------|------------------------|---------------------|-------|
+| **Global commands** | `~/.claude/commands/*.md` | `%USERPROFILE%\.claude\commands\*.md` | Available in every project via `/command-name` |
+| **Global skills** | `~/.claude/skills/<name>/SKILL.md` | `%USERPROFILE%\.claude\skills\<name>\SKILL.md` | Auto-activated by description matching |
+| **Project commands** | `<project>/.claude/commands/*.md` | `<project>\.claude\commands\*.md` | Available only in that project |
+| **Project skills** | `<project>/.claude/skills/<name>/SKILL.md` | `<project>\.claude\skills\<name>\SKILL.md` | Available only in that project |
 
 ## Prerequisites for Specific Skills
 
@@ -98,11 +147,20 @@ cp -R projects/ai-social-media-manager/skills/* /path/to/project/.claude/skills/
 | `sync` (Shopwired) | ShopWired API credentials |
 | `distribute` | Google Drive API + GHL credentials |
 | `render` | Playwright (`pip install playwright && playwright install`) |
+| `youtube-search` | YouTube Data API key (falls back to `yt-dlp`) |
 
 ## Updating
 
-Re-run the installer to overwrite with newer versions. The installer does not delete skills that were removed from the bundle.
+```bash
+# Pull latest and re-run installer
+cd claude-skills-bundle
+git pull
+./install.sh --global          # macOS/Linux
+.\install.ps1 -Global          # Windows
+```
+
+Re-running the installer overwrites existing files with the latest versions. It does not delete skills that were removed from the bundle.
 
 ## Origin
 
-Extracted from Ces AI Mac workspace on 2026-03-21 using automated bundler.
+Extracted from Ces AI Mac workspace on 2026-03-21. Maintained at [github.com/mcmespinaa/claude-skills-bundle](https://github.com/mcmespinaa/claude-skills-bundle).
