@@ -18,6 +18,8 @@ Complete collection of Claude Code skills and commands extracted from the Ces AI
 claude-skills-bundle/
 ├── README.md                 ← You are here
 ├── MANIFEST.md               ← Full inventory of every skill
+├── SETUP-MACOS.md            ← Full workspace setup guide for macOS
+├── SETUP-UBUNTU.md           ← Full workspace setup guide for Ubuntu/Linux
 ├── SETUP-WINDOWS.md          ← Full workspace setup guide for Windows
 ├── install.sh                ← Installer (macOS/Linux/WSL)
 ├── install.ps1               ← Installer (Windows PowerShell)
@@ -107,11 +109,17 @@ Copy-Item global\skills\* "$env:USERPROFILE\.claude\skills\" -Recurse -Force
 Copy-Item projects\ai-social-media-manager\skills\* "C:\path\to\project\.claude\skills\" -Recurse -Force
 ```
 
-## Full Workspace Setup (Windows)
+## Full Workspace Setup Guides
 
-For a complete workspace setup including Claude Code, Obsidian, Supabase, MCP servers, GHL, NotebookLM, YouTube search, and scheduled automation — see **[SETUP-WINDOWS.md](SETUP-WINDOWS.md)**.
+Each guide is a 15-phase walkthrough covering Claude Code, Obsidian, Supabase, MCP servers, GHL, NotebookLM, YouTube search, Google Drive, and scheduled automation — adapted for each platform.
 
-This is a 15-phase guide that covers:
+| Platform | Guide | Automation | Shell |
+|----------|-------|------------|-------|
+| **macOS** | [SETUP-MACOS.md](SETUP-MACOS.md) | LaunchAgents (launchd) | bash/zsh |
+| **Ubuntu/Linux** | [SETUP-UBUNTU.md](SETUP-UBUNTU.md) | systemd services + cron | bash |
+| **Windows** | [SETUP-WINDOWS.md](SETUP-WINDOWS.md) | Task Scheduler | PowerShell / Git Bash |
+
+**All three guides cover the same 15 phases:**
 1. Claude Code CLI + VS Code extension
 2. Obsidian vault creation
 3. Three-layer architecture (CLAUDE.md → CONTEXT.md → Playbooks)
@@ -120,11 +128,11 @@ This is a 15-phase guide that covers:
 6. Real-time vault watcher + backup
 7. MCP servers (Obsidian, Stitch, Excalidraw, Playwright)
 8. Plugins (GitHub, Frontend Design, Context7, Playwright, GHL)
-9. Google Workspace CLI + YouTube search
+9. Google Workspace CLI + YouTube search + Google Drive API
 10. NotebookLM integration
 11. GHL social media manager
 12. Clief Notes best practices
-13. Task Scheduler automation
+13. Scheduled automation (platform-specific)
 14. Skills bundle installation + hooks + memory system
 15. Verification checklist
 
