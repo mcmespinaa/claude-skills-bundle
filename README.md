@@ -6,7 +6,7 @@ Complete collection of Claude Code skills and commands extracted from the Ces AI
 
 | Category | Count | Description |
 |----------|-------|-------------|
-| **Global commands** | 4 | Slash commands available in all projects (`~/.claude/commands/`) |
+| **Global commands** | 5 | Slash commands available in all projects (`~/.claude/commands/`) |
 | **Global skills** | 2 | Skills available in all projects (`~/.claude/skills/`) |
 | **Project skills** | 49 | Project-specific skills (`.claude/skills/` per project) |
 | **Project commands** | 19 | Project-specific commands (`.claude/commands/` per project) |
@@ -24,10 +24,11 @@ claude-skills-bundle/
 ├── install.sh                ← Installer (macOS/Linux/WSL)
 ├── install.ps1               ← Installer (Windows PowerShell)
 ├── global/
-│   ├── commands/             ← 4 global slash commands
+│   ├── commands/             ← 5 global slash commands
 │   │   ├── context-load.md
 │   │   ├── decisions.md
 │   │   ├── session-log.md
+│   │   ├── setup.md
 │   │   └── status.md
 │   └── skills/               ← 2 global skills
 │       ├── notebooklm/       ← NotebookLM automation (SKILL.md)

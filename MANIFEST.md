@@ -2,17 +2,18 @@
 
 Generated: 2026-03-21
 
-**Total: 51 skills, 23 commands, 268 files**
+**Total: 51 skills, 24 commands, 269 files**
 
 ---
 
-## Global Commands (4)
+## Global Commands (5)
 
 | Command | Description |
 |---------|-------------|
 | `/context-load` | You are starting a fresh session. Perform a full context load to orient yourself before any work begins. |
 | `/decisions` | Surface relevant decisions from the decision registry. Optionally filter by workstream, status, or cost-of-delay. |
 | `/session-log` | Review this entire conversation and extract information into the correct Obsidian vault categories. Do NOT create one mo |
+| `/setup` | Interactive workspace setup assistant. Detects OS, installs prerequisites, clones skills bundle, creates Obsidian vaults, configures integrations. |
 | `/status` | Report the current state of the Organic Forward project. Read actual sources — do not answer from memory. |
 
 ## Global Skills (2)
