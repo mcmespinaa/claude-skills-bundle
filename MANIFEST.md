@@ -2,7 +2,7 @@
 
 Generated: 2026-03-21
 
-**Total: 51 skills, 24 commands, 269 files**
+**Total: 52 skills, 24 commands, 270 files**
 
 ---
 
@@ -16,10 +16,11 @@ Generated: 2026-03-21
 | `/setup` | Interactive workspace setup assistant. Detects OS, installs prerequisites, clones skills bundle, creates Obsidian vaults, configures integrations. |
 | `/status` | Report the current state of the Organic Forward project. Read actual sources — do not answer from memory. |
 
-## Global Skills (2)
+## Global Skills (3)
 
 | Skill | Description | Files |
 |-------|-------------|-------|
+| `linkedin-ads` | Run the LinkedIn Ad Engine — a client-agnostic, research-to-launch pipeline for winning LinkedIn B2B ads. Thin launcher into `~/Workspaces/Projects/linkedin-ad-engine/`. ... | 1 |
 | `notebooklm` | Complete API for Google NotebookLM - full programmatic access including features not in the web UI. ... | 1 |
 | `ui-ux-pro-max` | UI/UX design intelligence. 67 styles, 96 palettes, 57 font pairings, 25 charts, 13 stacks (React, Ne... | 28 |
 
