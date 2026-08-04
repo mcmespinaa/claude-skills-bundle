@@ -1,6 +1,13 @@
 ---
 name: shopwired-sync
-description: "Sync ShopWired e-commerce data with GoHighLevel CRM. Syncs customers and newsletter subscribers to GHL contacts, imports orders as pipeline opportunities, recovers abandoned carts via email workflows, and polls events for real-time changes. Use when user says 'sync ShopWired', 'import customers to GHL', 'abandoned cart recovery', 'tag shopwired customers', or invokes /shopwired-sync. Do NOT use for writing blog posts or social content — use /blog or /distribute instead."
+description: >-
+  Sync ShopWired e-commerce data with GoHighLevel CRM. Syncs customers and
+  newsletter subscribers to GHL contacts, imports orders as pipeline
+  opportunities, recovers abandoned carts via email workflows, and polls events
+  for real-time changes. Use when user says 'sync ShopWired', 'import customers
+  to GHL', 'abandoned cart recovery', 'tag shopwired customers', or invokes
+  /shopwired-sync. Do NOT use for writing blog posts or social content — use
+  /blog or /distribute instead.
 argument-hint: '"contacts" [--location ces] [--since 24h] [--dry-run]'
 disable-model-invocation: true
 ---

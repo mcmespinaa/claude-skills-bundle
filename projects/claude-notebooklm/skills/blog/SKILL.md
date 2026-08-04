@@ -1,6 +1,14 @@
 ---
 name: blog
-description: Create and publish blog posts to GoHighLevel (GHL) and/or ShopWired blog sites from any content source — NotebookLM artifacts, Obsidian notes, markdown files, URLs, or raw topics. Use when user says "write a blog post", "publish to blog", "create a blog about...", "blog this", "turn this into a blog post", or invokes /blog. Converts content to SEO-optimized HTML, uploads featured images, and publishes via GHL Blog API and/or ShopWired Blog API. Do NOT use for social media posts — use /distribute or /linkedin instead. Do NOT use for email newsletters — use /newsletter instead.
+description: >-
+  Create and publish blog posts to GoHighLevel (GHL) and/or ShopWired blog sites
+  from any content source — NotebookLM artifacts, Obsidian notes, markdown
+  files, URLs, or raw topics. Use when user says "write a blog post", "publish
+  to blog", "create a blog about...", "blog this", "turn this into a blog post",
+  or invokes /blog. Converts content to SEO-optimized HTML, uploads featured
+  images, and publishes via GHL Blog API and/or ShopWired Blog API. Do NOT use
+  for social media posts — use /distribute or /linkedin instead. Do NOT use for
+  email newsletters — use /newsletter instead.
 argument-hint: '"source" [--location ces|...] [--destination ghl|shopwired|both] [--status DRAFT|PUBLISHED] [--blog-id "..."] [--schedule "ISO datetime"]'
 disable-model-invocation: true
 ---

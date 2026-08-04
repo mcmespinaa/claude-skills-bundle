@@ -1,6 +1,10 @@
 ---
 name: newsletter
-description: Send styled HTML email newsletters via GHL. Converts markdown content to branded email, searches contacts by tag, and sends through GHL Conversations API or saves as GHL Email Builder template. Use when user says /newsletter, send newsletter, email this to subscribers, send this as an email, or similar.
+description: >-
+  Send styled HTML email newsletters via GHL. Converts markdown content to
+  branded email, searches contacts by tag, and sends through GHL Conversations
+  API or saves as GHL Email Builder template. Use when user says /newsletter,
+  send newsletter, email this to subscribers, send this as an email, or similar.
 allowed-tools: "Bash(python3:*) Bash(bash:*) Bash(curl:*) WebFetch WebSearch Read Write Edit Glob Grep"
 ---
 

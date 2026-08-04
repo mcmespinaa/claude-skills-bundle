@@ -1,6 +1,13 @@
 ---
 name: distribute
-description: Distribute NotebookLM-generated content to GoHighLevel (GHL) social media, Google Drive, and/or YouTube. Use when user says "distribute this", "post to Instagram", "post to LinkedIn", "schedule this on all platforms", "upload to Drive", "upload to YouTube", "send to GHL", or passes a file with platform shorthands like IG, FB, TH, LI, YT. Supports infographics, videos, podcasts, slide decks, reports, and quizzes. Do NOT use for writing content from scratch — use /linkedin or /newsletter instead.
+description: >-
+  Distribute NotebookLM-generated content to GoHighLevel (GHL) social media,
+  Google Drive, and/or YouTube. Use when user says "distribute this", "post to
+  Instagram", "post to LinkedIn", "schedule this on all platforms", "upload to
+  Drive", "upload to YouTube", "send to GHL", or passes a file with platform
+  shorthands like IG, FB, TH, LI, YT. Supports infographics, videos, podcasts,
+  slide decks, reports, and quizzes. Do NOT use for writing content from scratch
+  — use /linkedin or /newsletter instead.
 compatibility: Requires jq, curl, python3. macOS or Linux. GHL API key in .env.
 metadata:
   author: content-engine

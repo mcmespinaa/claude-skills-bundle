@@ -1,6 +1,10 @@
 ---
 name: vault-save
-description: Save Claude Code outputs to the Obsidian vault with proper frontmatter, wikilinks, and folder routing. Use when user says "save this to Obsidian", "vault save", "log this session", "save to vault", or invokes /vault-save. Supports conversations, skills, snippets, resources, and project notes.
+description: >-
+  Save Claude Code outputs to the Obsidian vault with proper frontmatter,
+  wikilinks, and folder routing. Use when user says "save this to Obsidian",
+  "vault save", "log this session", "save to vault", or invokes /vault-save.
+  Supports conversations, skills, snippets, resources, and project notes.
 allowed-tools: "Read Write Glob Grep"
 ---
 

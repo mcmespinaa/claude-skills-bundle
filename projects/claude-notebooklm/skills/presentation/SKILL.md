@@ -1,6 +1,12 @@
 ---
 name: presentation
-description: Create professional presentation decks via Canva. Supports pitch decks, keynotes, workshops, internal updates, and training decks. Use when user says /presentation, "create a deck", "make a presentation", "build slides about...", "pitch deck for...", or similar. Optionally repurposes slides for social via /distribute. Do NOT use for social-only carousels -- use /linkedin for LinkedIn PDF carousels, /distribute for posting finished decks.
+description: >-
+  Create professional presentation decks via Canva. Supports pitch decks,
+  keynotes, workshops, internal updates, and training decks. Use when user says
+  /presentation, "create a deck", "make a presentation", "build slides
+  about...", "pitch deck for...", or similar. Optionally repurposes slides for
+  social via /distribute. Do NOT use for social-only carousels -- use /linkedin
+  for LinkedIn PDF carousels, /distribute for posting finished decks.
 argument-hint: '"topic or source" [Pitch|Keynote|Update|Training|Workshop] [--location ces|...]'
 disable-model-invocation: true
 ---

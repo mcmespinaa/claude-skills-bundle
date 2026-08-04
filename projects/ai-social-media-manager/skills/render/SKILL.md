@@ -1,6 +1,12 @@
 ---
 name: render
-description: Renders branded images from HTML templates using Playwright headless Chromium. Produces social cards, OG images, carousel slides, email previews, and YouTube thumbnails with pixel-perfect web fonts. Also rebrands third-party exports. Use when user says /render, render a social card, generate OG image, rebrand this image, screenshot this URL, or similar. Called by other skills (/post, /blog, /newsletter) for template-based visuals.
+description: >-
+  Renders branded images from HTML templates using Playwright headless Chromium.
+  Produces social cards, OG images, carousel slides, email previews, and YouTube
+  thumbnails with pixel-perfect web fonts. Also rebrands third-party exports.
+  Use when user says /render, render a social card, generate OG image, rebrand
+  this image, screenshot this URL, or similar. Called by other skills (/post,
+  /blog, /newsletter) for template-based visuals.
 allowed-tools: "Bash(python3:*) Bash(bash:*) Read Write Edit Glob Grep"
 ---
 

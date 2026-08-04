@@ -1,6 +1,10 @@
 ---
 name: decision-log
-description: Document a community scaling decision with full rationale, tradeoffs, and reversibility analysis. Use when user says /decision-log, asks to log a decision, or wants to document why they chose a specific approach for their community.
+description: >-
+  Document a community scaling decision with full rationale, tradeoffs, and
+  reversibility analysis. Use when user says /decision-log, asks to log a
+  decision, or wants to document why they chose a specific approach for their
+  community.
 ---
 
 # Decision Log

@@ -1,6 +1,8 @@
 ---
 name: deploy
-description: Build and deploy the portfolio site to Cloudflare. Use when user says /deploy, deploy this, push to production, or ship it.
+description: >-
+  Build and deploy the portfolio site to Cloudflare. Use when user says /deploy,
+  deploy this, push to production, or ship it.
 allowed-tools: "Bash Read Grep Glob"
 ---
 

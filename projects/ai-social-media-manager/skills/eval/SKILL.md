@@ -1,6 +1,11 @@
 ---
 name: eval
-description: "Evaluates LLM-generated content quality against brand voice rules, platform optimization, and golden reference samples. Runs deterministic checks and Claude-as-judge scoring. Use when user says /eval, evaluate content quality, score this caption, run content evals, check brand voice, or benchmark outputs."
+description: >-
+  Evaluates LLM-generated content quality against brand voice rules, platform
+  optimization, and golden reference samples. Runs deterministic checks and
+  Claude-as-judge scoring. Use when user says /eval, evaluate content quality,
+  score this caption, run content evals, check brand voice, or benchmark
+  outputs.
 allowed-tools: "Bash(python3:*) Read Glob Grep"
 ---
 

@@ -1,6 +1,11 @@
 ---
 name: presentation
-description: Creates professional presentation decks via Canva (AI-designed) or python-pptx (template-based, offline). Supports pitch decks, keynotes, workshops, internal updates, and training decks. Use when user says /presentation, create a deck, make a presentation, build slides, use PowerPoint, or similar. Do NOT use for social media posts or carousels -- use /post instead.
+description: >-
+  Creates professional presentation decks via Canva (AI-designed) or python-pptx
+  (template-based, offline). Supports pitch decks, keynotes, workshops, internal
+  updates, and training decks. Use when user says /presentation, create a deck,
+  make a presentation, build slides, use PowerPoint, or similar. Do NOT use for
+  social media posts or carousels -- use /post instead.
 allowed-tools: "Bash(python3:*) Bash(bash:*) WebFetch WebSearch Read Write Edit Glob Grep"
 ---
 

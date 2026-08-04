@@ -1,6 +1,12 @@
 ---
 name: skill-checker
-description: Validate and QA Claude skills against Anthropic's official best practices. Use when user says "check this skill", "validate my skill", "QA the distribute skill", "audit skills", "run skill checker", or invokes /skill-checker. Checks frontmatter, description quality, folder structure, progressive disclosure, writing patterns, and triggering accuracy. Do NOT use for creating new skills — use skill-creator instead.
+description: >-
+  Validate and QA Claude skills against Anthropic's official best practices. Use
+  when user says "check this skill", "validate my skill", "QA the distribute
+  skill", "audit skills", "run skill checker", or invokes /skill-checker. Checks
+  frontmatter, description quality, folder structure, progressive disclosure,
+  writing patterns, and triggering accuracy. Do NOT use for creating new skills
+  — use skill-creator instead.
 compatibility: Requires python3 and PyYAML. macOS or Linux.
 metadata:
   author: content-engine

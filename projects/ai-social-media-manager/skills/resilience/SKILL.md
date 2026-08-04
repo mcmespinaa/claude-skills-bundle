@@ -1,6 +1,11 @@
 ---
 name: resilience
-description: "Static analysis resilience auditor for bash and Python scripts. Checks for timeout, retry, error handling, cleanup, and portability anti-patterns grounded in Netflix Chaos Engineering, OWASP A10, and CWE-835. Use when user says /resilience, audit resilience, stress test scripts, check error handling, how resilient is the system, or similar."
+description: >-
+  Static analysis resilience auditor for bash and Python scripts. Checks for
+  timeout, retry, error handling, cleanup, and portability anti-patterns
+  grounded in Netflix Chaos Engineering, OWASP A10, and CWE-835. Use when user
+  says /resilience, audit resilience, stress test scripts, check error handling,
+  how resilient is the system, or similar.
 allowed-tools: "Bash(python3:*) Read Glob Grep"
 ---
 

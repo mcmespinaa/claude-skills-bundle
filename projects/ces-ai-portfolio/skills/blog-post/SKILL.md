@@ -1,6 +1,8 @@
 ---
 name: blog-post
-description: Create a new blog post for the portfolio site. Use when user says /blog-post, write a blog post, create a new post, or wants to publish an article.
+description: >-
+  Create a new blog post for the portfolio site. Use when user says /blog-post,
+  write a blog post, create a new post, or wants to publish an article.
 allowed-tools: "Read Write Edit Grep Glob Bash"
 ---
 

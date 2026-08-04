@@ -1,6 +1,11 @@
 ---
 name: qa
-description: "Validates skills against the Agent Skills 2.0 standard. Checks YAML frontmatter, path variables, file references, line counts, description quality, and cross-skill links. Use when user says /qa, check skill quality, validate skills, lint skills, or wants to audit skill compliance. Run with a skill name (/qa post) or --all to check everything."
+description: >-
+  Validates skills against the Agent Skills 2.0 standard. Checks YAML
+  frontmatter, path variables, file references, line counts, description
+  quality, and cross-skill links. Use when user says /qa, check skill quality,
+  validate skills, lint skills, or wants to audit skill compliance. Run with a
+  skill name (/qa post) or --all to check everything.
 allowed-tools: "Bash(python3:*) Read Glob Grep"
 ---
 

@@ -1,6 +1,12 @@
 ---
 name: linkedin
-description: Create LinkedIn posts optimized for the 2026 algorithm. Use when user says "write a LinkedIn post", "LinkedIn carousel about...", "create a LinkedIn post", or invokes /linkedin. Drafts text posts, PDF carousels, and native video posts with captions tuned for engagement. Optionally schedules via GHL. Do NOT use for other social platforms — use /distribute for Instagram, Facebook, Threads.
+description: >-
+  Create LinkedIn posts optimized for the 2026 algorithm. Use when user says
+  "write a LinkedIn post", "LinkedIn carousel about...", "create a LinkedIn
+  post", or invokes /linkedin. Drafts text posts, PDF carousels, and native
+  video posts with captions tuned for engagement. Optionally schedules via GHL.
+  Do NOT use for other social platforms — use /distribute for Instagram,
+  Facebook, Threads.
 compatibility: Requires jq, curl, python3. macOS or Linux. GHL API key in .env for scheduling.
 metadata:
   author: content-engine

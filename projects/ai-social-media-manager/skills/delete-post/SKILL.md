@@ -1,6 +1,9 @@
 ---
 name: delete-post
-description: Deletes a previously scheduled social media post from the GoHighLevel Social Planner. This cannot be undone. Use when user says /delete-post, delete post, remove post, cancel scheduled post, or provides a GHL Post ID to remove.
+description: >-
+  Deletes a previously scheduled social media post from the GoHighLevel Social
+  Planner. This cannot be undone. Use when user says /delete-post, delete post,
+  remove post, cancel scheduled post, or provides a GHL Post ID to remove.
 allowed-tools: "Bash(bash:*) Bash(curl:*) Read Write Edit"
 ---
 
