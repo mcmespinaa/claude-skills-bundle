@@ -1,6 +1,8 @@
 ---
 name: vault-save
-description: Save content to the Obsidian documentation vault. Use when user says /vault-save, save this to the vault, document this, or log this decision.
+description: >-
+  Save content to the Obsidian documentation vault. Use when user says
+  /vault-save, save this to the vault, document this, or log this decision.
 allowed-tools: "Read Write Edit Grep Glob"
 ---
 

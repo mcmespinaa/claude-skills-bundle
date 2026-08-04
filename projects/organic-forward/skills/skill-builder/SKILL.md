@@ -1,6 +1,12 @@
 ---
 name: skill-builder
-description: Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit or optimize an existing skill, run evals to test a skill, benchmark skill performance, or optimize a skill's description for better triggering accuracy. Also use when someone says "build a skill", "make a skill", "turn this into a skill", or "improve this skill".
+description: >-
+  Create new skills, modify and improve existing skills, and measure skill
+  performance. Use when users want to create a skill from scratch, edit or
+  optimize an existing skill, run evals to test a skill, benchmark skill
+  performance, or optimize a skill's description for better triggering accuracy.
+  Also use when someone says "build a skill", "make a skill", "turn this into a
+  skill", or "improve this skill".
 ---
 
 # Skill Builder

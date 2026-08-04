@@ -1,6 +1,10 @@
 ---
 name: research
-description: Deep research layer using NotebookLM. Creates notebooks from URLs, PDFs, YouTube videos, and web research, then feeds extracted insights into the /post or /plan-week pipeline. Use when user says /research, research this topic, deep dive into, build a notebook about, or wants research-backed content.
+description: >-
+  Deep research layer using NotebookLM. Creates notebooks from URLs, PDFs,
+  YouTube videos, and web research, then feeds extracted insights into the /post
+  or /plan-week pipeline. Use when user says /research, research this topic,
+  deep dive into, build a notebook about, or wants research-backed content.
 allowed-tools: "Bash(notebooklm:*) Bash(python3:*) Bash(bash:*) Bash(curl:*) WebFetch WebSearch Read Write Edit Glob Grep"
 ---
 

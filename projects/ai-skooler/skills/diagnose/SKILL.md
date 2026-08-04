@@ -1,6 +1,10 @@
 ---
 name: diagnose
-description: Diagnose where a community creator sits in the Kourse 7-OS progression, identify their binding constraint, and show the revenue math. Use when user asks to assess their community, figure out what to focus on, or wants a diagnostic.
+description: >-
+  Diagnose where a community creator sits in the Kourse 7-OS progression,
+  identify their binding constraint, and show the revenue math. Use when user
+  asks to assess their community, figure out what to focus on, or wants a
+  diagnostic.
 ---
 
 # Community Scaling Diagnostic

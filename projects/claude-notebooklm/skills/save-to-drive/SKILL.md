@@ -1,6 +1,9 @@
 ---
 name: save-to-drive
-description: Upload any file to Google Drive with automatic folder organization. Works with any output from other skills (documents, reports, infographics, presentations, etc.). Supports subfolder paths and file sharing.
+description: >-
+  Upload any file to Google Drive with automatic folder organization. Works with
+  any output from other skills (documents, reports, infographics, presentations,
+  etc.). Supports subfolder paths and file sharing.
 argument-hint: '"file_path" [--folder "subfolder/path"] [--share email@example.com]'
 user-invokable: true
 ---

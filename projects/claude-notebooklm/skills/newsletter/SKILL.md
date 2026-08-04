@@ -1,6 +1,11 @@
 ---
 name: newsletter
-description: Send NotebookLM-generated content as styled HTML email newsletters via GHL. Use when user says "send newsletter", "email this to subscribers", "send this as an email", "email the report", or invokes /newsletter. Searches contacts by tag, converts markdown to branded HTML, and sends through GHL Conversations API. Do NOT use for social media posting — use /distribute instead.
+description: >-
+  Send NotebookLM-generated content as styled HTML email newsletters via GHL.
+  Use when user says "send newsletter", "email this to subscribers", "send this
+  as an email", "email the report", or invokes /newsletter. Searches contacts by
+  tag, converts markdown to branded HTML, and sends through GHL Conversations
+  API. Do NOT use for social media posting — use /distribute instead.
 compatibility: Requires jq, curl, python3. macOS or Linux. GHL API key in .env.
 metadata:
   author: content-engine

@@ -1,6 +1,13 @@
 ---
 name: youtube-search
-description: Search YouTube for videos, channels, and playlists. Use when user says "search YouTube for...", "find YouTube videos about...", "look up on YouTube", "collect all videos from this channel", "import this YouTuber into NotebookLM", or invokes /youtube-search. Returns structured results with stats enrichment. Supports filters for date, duration, channel, region. Uses yt-dlp as quota-free fallback. Do NOT use for uploading videos — use /distribute with --youtube instead.
+description: >-
+  Search YouTube for videos, channels, and playlists. Use when user says "search
+  YouTube for...", "find YouTube videos about...", "look up on YouTube",
+  "collect all videos from this channel", "import this YouTuber into
+  NotebookLM", or invokes /youtube-search. Returns structured results with stats
+  enrichment. Supports filters for date, duration, channel, region. Uses yt-dlp
+  as quota-free fallback. Do NOT use for uploading videos — use /distribute with
+  --youtube instead.
 compatibility: Requires curl, python3. Optional yt-dlp for quota-free mode. YouTube API key in .env.
 metadata:
   author: content-engine

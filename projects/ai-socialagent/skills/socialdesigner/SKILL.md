@@ -1,6 +1,13 @@
 ---
 name: socialdesigner
-description: "World-class UI/UX design system for creating premium, modern web interfaces with animations, micro-interactions, and a polished feel. Use this skill whenever the user wants to design or build a web page, landing page, component, dashboard, directory, ecosystem map, or any frontend interface. Also activate when the user mentions UI design, web design, premium feel, animations, modern layout, bento grid, interactive map, or asks for design feedback on any frontend work — even if they don't explicitly say 'design'."
+description: >-
+  World-class UI/UX design system for creating premium, modern web interfaces
+  with animations, micro-interactions, and a polished feel. Use this skill
+  whenever the user wants to design or build a web page, landing page,
+  component, dashboard, directory, ecosystem map, or any frontend interface.
+  Also activate when the user mentions UI design, web design, premium feel,
+  animations, modern layout, bento grid, interactive map, or asks for design
+  feedback on any frontend work — even if they don't explicitly say 'design'.
 ---
 
 # Social Designer — Premium UI/UX Design System

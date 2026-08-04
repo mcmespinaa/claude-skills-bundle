@@ -1,6 +1,12 @@
 ---
 name: yt-search
-description: Searches YouTube for relevant videos, extracts transcripts and metadata, analyzes channels for engagement patterns, and repurposes content into social media posts. Full pipeline from search to schedule. Inherits brand voice from the /post skill. Use when user says /yt-search, search YouTube for, find YouTube videos about, repurpose this YouTube video, analyze this channel, or similar.
+description: >-
+  Searches YouTube for relevant videos, extracts transcripts and metadata,
+  analyzes channels for engagement patterns, and repurposes content into social
+  media posts. Full pipeline from search to schedule. Inherits brand voice from
+  the /post skill. Use when user says /yt-search, search YouTube for, find
+  YouTube videos about, repurpose this YouTube video, analyze this channel, or
+  similar.
 allowed-tools: "Bash(python3:*) Bash(bash:*) Bash(curl:*) WebFetch WebSearch Read Write Edit Glob Grep"
 ---
 

@@ -1,6 +1,10 @@
 ---
 name: qa-test
-description: "Live functional testing of the MCP server. Runs through all 18 tools, 5 resources, and 5 prompts with real and mock inputs, reporting pass/fail per test. Use when user says /qa-test, test the MCP server, run functional tests, smoke test, or integration test."
+description: >-
+  Live functional testing of the MCP server. Runs through all 18 tools, 5
+  resources, and 5 prompts with real and mock inputs, reporting pass/fail per
+  test. Use when user says /qa-test, test the MCP server, run functional tests,
+  smoke test, or integration test.
 allowed-tools: "Bash(python3:*) Read Glob Grep Agent"
 ---
 

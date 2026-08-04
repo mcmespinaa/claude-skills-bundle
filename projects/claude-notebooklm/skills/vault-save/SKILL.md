@@ -1,6 +1,11 @@
 ---
 name: vault-save
-description: Save Claude Code outputs to the Obsidian vault with proper frontmatter, wikilinks, and folder routing. Use when user says "save this to Obsidian", "vault save", "log this session", "save to vault", or invokes /vault-save. Supports conversations, skills, snippets, resources, and project notes. Do NOT use for reading or querying the vault — use direct file tools instead.
+description: >-
+  Save Claude Code outputs to the Obsidian vault with proper frontmatter,
+  wikilinks, and folder routing. Use when user says "save this to Obsidian",
+  "vault save", "log this session", "save to vault", or invokes /vault-save.
+  Supports conversations, skills, snippets, resources, and project notes. Do NOT
+  use for reading or querying the vault — use direct file tools instead.
 argument-hint: '"<content or file>" [--type conversation|skill|snippet|resource|note] [--project name]'
 disable-model-invocation: true
 ---

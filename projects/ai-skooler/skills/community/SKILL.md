@@ -1,6 +1,10 @@
 ---
 name: community
-description: Scrape and analyze community feed posts from a Skool community. Extracts high-value posts, comments, and emerging use cases. Use when user says /community followed by a Skool URL, or asks to scrape community posts, analyze a feed, or extract use cases from Skool.
+description: >-
+  Scrape and analyze community feed posts from a Skool community. Extracts
+  high-value posts, comments, and emerging use cases. Use when user says
+  /community followed by a Skool URL, or asks to scrape community posts, analyze
+  a feed, or extract use cases from Skool.
 ---
 
 # Community Feed Scraper & Analyzer

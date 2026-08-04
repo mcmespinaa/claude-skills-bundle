@@ -1,6 +1,14 @@
 ---
 name: web-design
-description: "Design high-converting web pages: sales pages, landing pages, ecommerce product pages, SaaS pages, and funnels. Generates complete page specs with section-by-section layout, copy, and visual design using proven conversion frameworks (PAS, AIDA, StoryBrand, Hook-Story-Offer). Use when user says 'design a sales page', 'landing page for...', 'product page layout', 'funnel for...', 'web page spec', or invokes /web-design. Outputs structured page blueprints ready for development. Do NOT use for building/coding pages -- this skill produces design specs and copy, not code."
+description: >-
+  Design high-converting web pages: sales pages, landing pages, ecommerce
+  product pages, SaaS pages, and funnels. Generates complete page specs with
+  section-by-section layout, copy, and visual design using proven conversion
+  frameworks (PAS, AIDA, StoryBrand, Hook-Story-Offer). Use when user says
+  'design a sales page', 'landing page for...', 'product page layout', 'funnel
+  for...', 'web page spec', or invokes /web-design. Outputs structured page
+  blueprints ready for development. Do NOT use for building/coding pages -- this
+  skill produces design specs and copy, not code.
 argument-hint: '"product or offer" [SalesPage|Landing|ProductPage|SaaS|Funnel] [--location ces|...]'
 disable-model-invocation: true
 ---

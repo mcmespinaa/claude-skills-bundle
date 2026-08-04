@@ -1,6 +1,11 @@
 ---
 name: post
-description: Creates platform-optimized social media posts and schedules them through the GoHighLevel API. Supports single images, carousels (including multimodal image+video), and text-only posts across Facebook, Instagram, LinkedIn, Threads, Twitter/X, TikTok, and GMB. Use when user says /post, post this, schedule a post, create a carousel, make a social media post, or similar.
+description: >-
+  Creates platform-optimized social media posts and schedules them through the
+  GoHighLevel API. Supports single images, carousels (including multimodal
+  image+video), and text-only posts across Facebook, Instagram, LinkedIn,
+  Threads, Twitter/X, TikTok, and GMB. Use when user says /post, post this,
+  schedule a post, create a carousel, make a social media post, or similar.
 allowed-tools: "Bash(python3:*) Bash(bash:*) Bash(curl:*) WebFetch WebSearch Read Write Edit Glob Grep"
 ---
 

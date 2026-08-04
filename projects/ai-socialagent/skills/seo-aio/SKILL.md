@@ -1,6 +1,10 @@
 ---
 name: seo-aio
-description: "SEO, AIO, and GEO optimization for the Sweden Ecosystem Directory. Activates on: schema markup, meta tags, sitemap, robots.txt, programmatic SEO, keyword strategy, AI citation optimization, search ranking, structured data, traffic strategy — even without the word 'SEO'."
+description: >-
+  SEO, AIO, and GEO optimization for the Sweden Ecosystem Directory. Activates
+  on: schema markup, meta tags, sitemap, robots.txt, programmatic SEO, keyword
+  strategy, AI citation optimization, search ranking, structured data, traffic
+  strategy — even without the word 'SEO'.
 ---
 
 # SEO/AIO Agent — Sweden Ecosystem Directory

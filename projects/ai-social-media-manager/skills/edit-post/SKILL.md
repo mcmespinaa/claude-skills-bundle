@@ -1,6 +1,10 @@
 ---
 name: edit-post
-description: Edits a previously scheduled social media post via the GoHighLevel API. Can update caption, media, or schedule time. Use when user says /edit-post, edit post, update post, change the caption, reschedule post, or provides a GHL Post ID to modify.
+description: >-
+  Edits a previously scheduled social media post via the GoHighLevel API. Can
+  update caption, media, or schedule time. Use when user says /edit-post, edit
+  post, update post, change the caption, reschedule post, or provides a GHL Post
+  ID to modify.
 allowed-tools: "Bash(bash:*) Bash(curl:*) Read Write Edit"
 ---
 

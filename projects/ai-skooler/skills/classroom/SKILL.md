@@ -1,6 +1,9 @@
 ---
 name: classroom
-description: Scrape all courses and lessons from a Skool community classroom into the Obsidian vault. Use when user says /classroom followed by a Skool community URL, or asks to scrape a classroom, courses, or lessons from Skool.
+description: >-
+  Scrape all courses and lessons from a Skool community classroom into the
+  Obsidian vault. Use when user says /classroom followed by a Skool community
+  URL, or asks to scrape a classroom, courses, or lessons from Skool.
 ---
 
 # Classroom Scraper

@@ -1,6 +1,11 @@
 ---
 name: plan-week
-description: Creates a full 7-day content plan with per-platform captions, generates visuals, and schedules all posts through the GoHighLevel API using parallel execution. Inherits brand voice from the /post skill. Use when user says /plan-week, plan a week of content, create a content plan, schedule a week, batch schedule posts, or similar.
+description: >-
+  Creates a full 7-day content plan with per-platform captions, generates
+  visuals, and schedules all posts through the GoHighLevel API using parallel
+  execution. Inherits brand voice from the /post skill. Use when user says
+  /plan-week, plan a week of content, create a content plan, schedule a week,
+  batch schedule posts, or similar.
 allowed-tools: "Bash(python3:*) Bash(bash:*) Bash(curl:*) WebFetch WebSearch Read Write Edit Glob Grep"
 ---
 

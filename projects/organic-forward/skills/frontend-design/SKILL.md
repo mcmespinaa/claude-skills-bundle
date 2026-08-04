@@ -1,6 +1,11 @@
 ---
 name: frontend-design
-description: Create distinctive, production-grade frontend interfaces for the Organic Forward B2B marketplace. Combines conversion-optimized ecommerce patterns, Rigby marketplace UX principles, and the project's design system (Next.js 15 + React + Tailwind + shadcn/ui + @medusajs/ui). Use when building storefront pages, components, or dashboard interfaces.
+description: >-
+  Create distinctive, production-grade frontend interfaces for the Organic
+  Forward B2B marketplace. Combines conversion-optimized ecommerce patterns,
+  Rigby marketplace UX principles, and the project's design system (Next.js 15 +
+  React + Tailwind + shadcn/ui + @medusajs/ui). Use when building storefront
+  pages, components, or dashboard interfaces.
 ---
 
 You are building frontend for **Organic Forward** — a B2B marketplace connecting organic food SMEs (farmers/producers) with EU procurement buyers. Built on MercurJS/Medusa.js 2.0, Next.js 15, React, Tailwind CSS, shadcn/ui, and @medusajs/ui.

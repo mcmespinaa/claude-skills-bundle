@@ -1,6 +1,10 @@
 ---
 name: blueprint
-description: Generate a step-by-step execution blueprint for a specific OS phase or community scaling goal. Use when user says /blueprint, asks for a plan, playbook, or step-by-step guide for their community, or after a /diagnose reveals what phase they're in.
+description: >-
+  Generate a step-by-step execution blueprint for a specific OS phase or
+  community scaling goal. Use when user says /blueprint, asks for a plan,
+  playbook, or step-by-step guide for their community, or after a /diagnose
+  reveals what phase they're in.
 ---
 
 # Community Scaling Blueprint

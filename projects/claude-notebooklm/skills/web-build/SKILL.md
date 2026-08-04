@@ -1,6 +1,13 @@
 ---
 name: web-build
-description: "Build and deploy websites from /web-design specs or from scratch. Orchestrates Google Stitch (AI UI generation via MCP), Nano Banana 2 (AI image generation), and /render (branded templates) to produce deployable sites. Deploys to Firebase Hosting (static) or Cloud Run (SSR). Use when user says 'build this site', 'deploy to firebase', 'turn this spec into a website', 'make this live', or invokes /web-build. Do NOT use for design specs only -- use /web-design instead."
+description: >-
+  Build and deploy websites from /web-design specs or from scratch. Orchestrates
+  Google Stitch (AI UI generation via MCP), Nano Banana 2 (AI image generation),
+  and /render (branded templates) to produce deployable sites. Deploys to
+  Firebase Hosting (static) or Cloud Run (SSR). Use when user says 'build this
+  site', 'deploy to firebase', 'turn this spec into a website', 'make this
+  live', or invokes /web-build. Do NOT use for design specs only -- use
+  /web-design instead.
 argument-hint: '"site description or spec file" [--stack astro|nextjs|html-tailwind] [--deploy firebase|cloudrun|none] [--location ces]'
 disable-model-invocation: true
 ---

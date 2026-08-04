@@ -1,6 +1,14 @@
 ---
 name: senior-engineer
-description: "Economical senior engineering skill for building production software with sharp judgment. Activates when the user asks to build, architect, implement, or review any software — web apps, APIs, databases, infrastructure, scripts, or full-stack features. Also activates when the user asks for code review, architecture decisions, technical planning, refactoring, debugging, or performance work. Use this skill for any substantial engineering task, even if the user doesn't say 'senior' or 'architect' — if they need code written well, this skill applies."
+description: >-
+  Economical senior engineering skill for building production software with
+  sharp judgment. Activates when the user asks to build, architect, implement,
+  or review any software — web apps, APIs, databases, infrastructure, scripts,
+  or full-stack features. Also activates when the user asks for code review,
+  architecture decisions, technical planning, refactoring, debugging, or
+  performance work. Use this skill for any substantial engineering task, even if
+  the user doesn't say 'senior' or 'architect' — if they need code written well,
+  this skill applies.
 ---
 
 # Senior Engineer — Economical Engineering

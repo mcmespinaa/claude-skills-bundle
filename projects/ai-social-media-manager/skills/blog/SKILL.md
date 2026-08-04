@@ -1,6 +1,10 @@
 ---
 name: blog
-description: Creates and publishes SEO-optimized blog posts to GoHighLevel Blog platform. Handles drafting, featured images, SEO metadata, scheduling, and cross-posting to social media. Use when user says /blog, publish blog post, write blog about, create blog, or similar.
+description: >-
+  Creates and publishes SEO-optimized blog posts to GoHighLevel Blog platform.
+  Handles drafting, featured images, SEO metadata, scheduling, and cross-posting
+  to social media. Use when user says /blog, publish blog post, write blog
+  about, create blog, or similar.
 allowed-tools: "Bash(python3:*) Bash(bash:*) Bash(curl:*) WebFetch WebSearch Read Write Edit Glob Grep"
 ---
 
